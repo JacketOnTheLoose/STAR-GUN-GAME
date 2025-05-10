@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>STAR GUN</title>
+    <link rel="stylesheet" href="main.css">
+	<link rel="icon" href="images/icon.ico" />
+</head>
+<body>
+	<div class="parallax-bg" id="bg"></div>
+	<div class="parallax-2bg" id="2bg"></div>
+	
+    <div class="container">
+        <div class="left-block">
+            
+        </div>
+
+        <div class="center-block">
+			<img src="images/Title.png" alt="Image locale">
+            <h1 class="title">Un jeu de Jacket On The Loose</h1>
+			
+            <h2>Une terreur est sur le point d'arriver au sein du 3ème système.<br>Son nom, le STAR GUN. Mais rien n'est perdu.<br>Un robot ouvrier peut encore nous sauver.</h2>
+			<div class="row">
+				<div class="corridor-container">
+					<div class="corridor-track">
+						<img src="images/corridor.png" alt="Image locale">
+						<img src="images/corridor.png" alt="Image locale">
+						
+					</div>
+					<img src="images/W347.gif" alt="Image par-dessus" class="overlay-player" >
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="lefot">
+					<h3>Parcourez le 3ᵉ système et tentez de déjouer le chantier maléfique du STAR GUN. Attention, les Insectimoprhs sont coriaces et ne vous laisseront pas faire. Des réflexions et des difficultés vous attendent, mais ne baissez pas les bras.</h2>
+				</div>
+				<div class="ima">
+					<img src="images/Insectimorph.gif" alt="Image locale"
+					width="480" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="center-block">
+					<h2>Jeu disponible en alpha ! Vp<br><br><a href="https://drive.google.com/drive/folders/1UDrUGWaloQkCXEpTwDX6Ya9qzpmj1htP?usp=drive_link" target="_blank"><img src="images/button.png" alt="Image locale"></a></h2>
+				</div>
+			</div>
+			<div class="row">
+				<h3 class="lefot">À propos<br><br>Je ne suis pas développeur, à la base, et je n'ai pas l'intention de le devenir. 
+					J'essaye, avec ce jeu, d'explorer le côté artistique trop souvent négligé du jeu vidéo. 
+					Je n'ai pas fait un jeu pour le divertissement, mais un jeu qui pousse à une réflexion 
+					sur le medium, son impact, ses possibilités. J'ai su m'entourer de personnes qui m'aideront 
+					à tenir ce projet à bout. C'est pourquoi, vous, en tant que joueur, j'attends une implication 
+					et des retours durant le développement. Vous pourrez alors compléter ce 
+					<a href="https://docs.google.com/forms/d/1eobMq3xzVqhEgX5aZhFgcRZxunFwLcTN3r6NHZbfSIQ/prefill" target="_blank">questionnaire</a>
+					après votre expérience de jeu. Il y aura des mises à jour fréquentes, alors soyez au rendez-vous.</h3>
+			</div>
+			<div class="row">
+				<div class="corridor-container">
+					<div class="desurt-track">
+						<img src="images/desurt.png" alt="Image locale">
+						<img src="images/desurt.png" alt="Image locale">
+						
+					</div>
+					<img src="images/ship.png" alt="Image par-dessus" class="overlay-ship" >
+					
+				</div>
+			</div>
+        </div>
+	
+		
+		<div class="right-block">
+        </div>
+    </div>
+	<script>
+		window.addEventListener('scroll', () => {
+			const scroll = window.scrollY;
+			document.getElementById('bg').style.transform = `translateY(${-scroll * 0.25}px)`;
+		});
+	</script>
+	<script>
+		let time = 0;
+
+		function animateBackground() {
+			const scroll = window.scrollY;
+
+		
+			const bg = document.getElementById('2bg');
+			if (bg) {
+				bg.style.transform = `translateY(${-scroll * 0.66}px)`;
+
+			
+				const brightness = 1.5 + 0.5 * Math.sin(time);
+				bg.style.filter = `brightness(${brightness})`;
+			}
+
+			time += 0.02;
+			requestAnimationFrame(animateBackground);
+		}
+
+		animateBackground(); 
+	</script>
+		
+
+</body>
+</html>
