@@ -76,7 +76,7 @@
         .center-block {
             flex: 1;
             text-align: center;
-            
+            max-width: 160vh;
 		}
 			
 		.row {
@@ -124,7 +124,7 @@
 		}
 
        .corridor-container {
-            width: 160vh;
+            width: 160hv;
             overflow: hidden;
             height: 480px; 
             position: relative;
