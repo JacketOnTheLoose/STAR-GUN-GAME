@@ -167,9 +167,21 @@
         .overlay-ship {
             position: absolute;
             top: 64px;
-            left: 50%;
-            transform: translateX(-50%);
-            
+            left: 33%;
+            animation: ship-flying 7s linear infinite;
             z-index: 10; 
             pointer-events: none; 
+        }
+
+         @keyframes ship-flying {
+            0% {
+            transform: translateY(-15%);
+            }
+            50% {
+            transform: translateY(45%);
+            }
+            100% {
+            transform: translateY(-15%);
+            }
+            
         }
