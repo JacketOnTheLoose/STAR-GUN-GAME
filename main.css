@@ -56,6 +56,14 @@
 		.right-block {
             width: 7.5%;
         }
+
+        .right-buttons{
+            position: fixed;
+            right: 1% ;
+            top : 33%;
+
+            z-index: 10;
+        }
 		
 		.title {
             font-size: 125px;
