@@ -1,0 +1,15 @@
+Vp25.05.3 :
+	- Desurt Canyon violet :
+		- Grès violet
+	- IA Insectimorphs :
+		- Différents comportement d'affut : Certains vous attaquent directement à la vue et d'autre ne le feront que si vous avez une arme, plus d'une étoile de recherche ou zone interdite.
+	- Flyws intégrés en 2D
+	- Jouer avec n'importe quelle résolution d'écran : Le jeu reste en 16:9 et remplis le reste par du noir
+	- Nage modifiée : Le personnage ne peut floter que pour grimper une case devant lui sans une autre au dessus
+	- Corrections dialogues
+	- Réglage des paramètre graphique dans le menu pause :
+		- Mirage
+		- Dégât
+		- Texte pixel
+	- Correctionns de la police (StarGunFont)
+	- Amélioration Desurt Zone Miniaire
