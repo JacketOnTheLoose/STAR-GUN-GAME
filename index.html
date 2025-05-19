@@ -45,8 +45,11 @@
 			<div class="row">
 				<div class="center-block">
 					<h2>Jeu disponible en alpha ! <a href="MAJ.txt" target="_blank">Logs</a><br><br>
-						<a href="https://drive.google.com/drive/folders/1UDrUGWaloQkCXEpTwDX6Ya9qzpmj1htP?usp=drive_link" target="_blank"><img src="images/button.png" alt="Image locale"></a>
-						<a href="https://drive.google.com/drive/folders/1F4iYOMm4aqg5_qOlGGqm1B7edvunvBah?usp=drive_link" target="_blank"><img src="images/apple.png" alt="Image locale"></a>
+						<a href="https://drive.google.com/drive/folders/1UDrUGWaloQkCXEpTwDX6Ya9qzpmj1htP?usp=drive_link" target="_blank"><img src="images/button.png" alt="Image locale">
+					<div class= "infobulle">
+						Disponnible sur Windows
+					</div>
+				</a>
 					</h2>
 				</div>
 			</div>
@@ -78,11 +81,23 @@
 		
 		<div class="right-block">
 			<div class= "right-buttons">
-				<a href="https://discord.gg/htk6huJgCr" target="_blank"><img src="images/discord.png" alt="Image locale"></a>
+				<a href="https://discord.gg/htk6huJgCr" target="_blank"><img src="images/discord.png" alt="Image locale">
+					<div class= "Rightinfobulle">
+						Dicord
+					</div>
+				</a>
 				<br>
-				<a href="https://www.youtube.com/watch?v=72fL8V8DfeM&ab_channel=JacketOnTheLoose" target="_blank"><img src="images/youtube.png" alt="Image locale"></a>
+				<a href="https://www.youtube.com/watch?v=72fL8V8DfeM&ab_channel=JacketOnTheLoose" target="_blank"><img src="images/youtube.png" alt="Image locale">
+					<div class= "Rightinfobulle">
+						Youtube
+					</div>
+				</a>
 				<br>
-				<a href="https://soundcloud.com/jacket-on-the-loose/sets/star-gun-original-soundtrack?si=ec0f4ed9db4b48b696b576031797efb2&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank"><img src="images/soundcloud.png" alt="Image locale"></a>
+				<a href="https://soundcloud.com/jacket-on-the-loose/sets/star-gun-original-soundtrack?si=ec0f4ed9db4b48b696b576031797efb2&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank"><img src="images/soundcloud.png" alt="Image locale">
+					<div class= "Rightinfobulle">
+						Soundcloud
+					</div>
+				</a>
 			</div>
         </div>
     </div>
@@ -104,11 +119,11 @@
 				bg.style.transform = `translateY(${-scroll * 0.66}px)`;
 
 			
-				const brightness = 1.5 + 0.5 * Math.sin(time);
-				bg.style.filter = `brightness(${brightness})`;
+				const Modulate = 1.5 + 1 * Math.sin(time);
+				bg.style.filter = `saturate(${Modulate*2.0})`;
 			}
 
-			time += 0.02;
+			time += 0.025;
 			requestAnimationFrame(animateBackground);
 		}
 
