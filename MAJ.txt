@@ -13,3 +13,17 @@ Vp25.05.3 :
 		- Texte pixel
 	- Correctionns de la police (StarGunFont)
 	- Amélioration Desurt Zone Miniaire
+Vp25.05.4 :
+	- Niveau spatial grandement amélioré
+	- Sections "Options" dans Menu et Menu Pause
+	- Résolution de l'énorme bug de sauvegarde quand une autre partie est lancée
+	- Correction des Flyws:
+		- Dégât de leur laser
+		- Nerf : déplacement de leur base et de leur cannon plus lentes
+	- Eploxions Dynamiques
+	- Indicateur de cible en face des viseur
+	- Déviateur laser 
+	- Interface module
+	- Option de langue anglais(Partiellement)
+	- Les ascenseurs ne tuent plus
+	- Superdrive
