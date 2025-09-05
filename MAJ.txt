@@ -41,8 +41,9 @@ donc    - "!" restera dans visible à l'écran et la direction de où déborde l
 	-  Rajout d'effet de dégât : 
 		- Ajout Trame
 		- Ajout effet de de point des pixels 
-	- Effet jaune sur les niveaux sans fuseaux horraire enlevé (Dû au gradient de cylce colorimétrique jour nuit dont la valeur samplé = 1 valait #EFEFE9, maintenant valant #FFFFFF)
+	- Effet jaune sur les niveaux sans fuseaux horaire enlevé (Dû au gradient de cycle colorimétrique jour nuit dont la valeur samplé = 1 valait #EFEFE9, maintenant valant #FFFFFF)
 	- Changement de couleur du phylactère de dialogue
 	- Les items dans l'inventaire sont alignés par rapport à leur case en paramétrage "Texte pixelisé" désactivé
 	- Sélection plus rapide des modules
 	- Lumière sous l'eau
+
