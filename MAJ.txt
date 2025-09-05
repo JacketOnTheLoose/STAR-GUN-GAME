@@ -35,14 +35,14 @@ Correction rapide de la Vp25.09.0 :
 	- Porte de l'avant poste d'Arquaz ne redirige plus vers le tout premier niveau (c'était vraiment critique)
 
 Vp25.09.1 :
-	- Rajout de lumière sur les différents éléments dont les yeux des Insectimorphs pour les rendre plus visible
-	- Les insectimorphs ne repère pas le joueur si il est en dehors de l'écran mais continnura de le suivre si il est en chasse tant bien même il a quitté l'écran
+	- Rajout de lumières sur les différents éléments dont les yeux des Insectimorphs pour les rendre plus visible
+	- Les insectimorphs ne repèrent pas le joueur si il est en dehors de l'écran mais continueront de le suivre si ils sont en chasse tant bien même ils ont quitté l'écran
 donc    - "!" restera dans visible à l'écran et la direction de où déborde l'insectimorph de l'écran est indiqué avec une flèche
-	-  Rajout d'éffet de dégât : 
+	-  Rajout d'effet de dégât : 
 		- Ajout Trame
 		- Ajout effet de de point des pixels 
 	- Effet jaune sur les niveaux sans fuseaux horraire enlevé (Dû au gradient de cylce colorimétrique jour nuit dont la valeur samplé = 1 valait #EFEFE9, maintenant valant #FFFFFF)
 	- Changement de couleur du phylactère de dialogue
-	- Liste items dans l'inventaire sont allignés
-	- Selection plus rapide des modules
+	- Les items dans l'inventaire sont alignés par rapport à leur case en paramétrage "Texte pixelisé" désactivé
+	- Sélection plus rapide des modules
 	- Lumière sous l'eau
