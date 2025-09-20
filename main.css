@@ -10,11 +10,15 @@
             color: #B52D1B;
             margin: 0;
             padding: 0px;
+            
 			
         }
         .sbt{
             height: 2000px;
             
+        }
+        .space{
+            height: 100px;
         }
         .star_gun_title {
             position: fixed;
@@ -115,17 +119,14 @@
             flex: 1;
             
             text-align: left;
-            animation : textre linear;
+            animation : l linear;
             animation-timeline: view();
 			width: 66%;
+
+           
         }
 
-        .textre{
-            position: fixed;
-            
-        }
-
-         @keyframes textre {
+        @keyframes l {
             0%{
                 opacity: 0%;
                 transform: translateX(-50%);
@@ -139,6 +140,12 @@
                 transform: translateX(-50%);
             }
         }
+       
+        .textre{
+            opacity: 1;
+        }
+        
+       
         .screen_container{
     
             margin: 10px auto; 
@@ -312,6 +319,7 @@
             border-left: 15px solid transparent;
             border-right: 15px solid transparent;
             border-bottom: 15px solid transparent;
+            z-index: 1;
             
             
         }
