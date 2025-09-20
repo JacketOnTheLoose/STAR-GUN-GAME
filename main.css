@@ -3,21 +3,38 @@
             font-family: 'Font';
             src: url('fonts/StarGun.ttf') format('truetype');
         }
-
+       
         body {
             font-family: 'Font', sans-serif;
             overflow-x: hidden;
             color: #B52D1B;
             margin: 0;
-            padding: 5px;
+            padding: 0px;
 			
+        }
+        .sbt{
+            height: 2000px;
+            
+        }
+        .star_gun_title {
+            position: fixed;
+            width: 1540px;
+            z-index: -1; 
+            top: -16.3%;
+            pointer-events: none; 
+            filter: brightness(50%);
+            animation : star_gun_title linear;
+            
+            animation-timeline: scroll();
+            animation-range-start: contain 0px;
+            animation-range-end: contain 2000px;
         }
 		.parallax-bg {
 			position: fixed;
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 200vh; 
+			height: 400vh; 
 			background-image: url('images/background.png');
 			background-repeat: repeat-y;
 			background-size: 100% auto;
@@ -30,7 +47,7 @@
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 400vh; 
+			height: 800vh; 
 			background-image: url('images/2ndbackground.png');
 			background-repeat: repeat-y;
 			background-size: 100% auto;
@@ -40,30 +57,38 @@
 		}
         .container {
             display: flex;
-            gap: 40px;
+            gap: 0px;
             align-items: flex-start;
         }
 
-        .left-block {
-            width: 7.5%;
-        }
+       
 
         .center-block {
             flex: 1;
+            width: 1540px;
+            margin: 0 auto;
             text-align: center;
         }
 		
 		.right-block {
-            width: 7.5%;
+            width: 0%;
         }
 
         .right-buttons{
             position: fixed;
-            right: 1% ;
+            right: -10% ;
             top : 33%;
 
             z-index: 10;
+            animation : right_buttons linear;
+            
+            animation-timeline: scroll();
+            animation-range-start: contain 1800px;
+            animation-range-end: contain 1900px;
+            animation-fill-mode: forwards;
+            
         }
+       
 		
 		.title {
             font-size: 125px;
@@ -88,13 +113,61 @@
 			
 		.lefot {
             flex: 1;
+            
             text-align: left;
+            animation : textre linear;
+            animation-timeline: view();
 			width: 66%;
         }
 
+        .textre{
+            position: fixed;
+            
+        }
+
+         @keyframes textre {
+            0%{
+                opacity: 0%;
+                transform: translateX(-50%);
+            }
+            25%,75%{
+                opacity: 100%;
+                transform: translateX(00%);
+            }
+            100%{
+                opacity: 0%;
+                transform: translateX(-50%);
+            }
+        }
+        .screen_container{
+    
+            margin: 10px auto; 
+            width:480px;
+        }
 		.ima {
-			width: 34%;
+			right:0%;
+            
+            animation : screen_a linear;
+            
+            animation-timeline: view();
 		}
+        @keyframes screen_a {
+            0%{
+                opacity: 0%;
+                transform: translateX(50%);
+            }
+            25%,75%{
+                opacity: 100%;
+                transform: translateX(00%);
+            }
+            100%{
+                opacity: 0%;
+                transform: translateX(50%);
+            }
+        }
+
+       
+       
 		        
 		h2 {
 			font-size: 65px;
@@ -148,6 +221,7 @@
         @keyframes scrollBanner {
             from {
             transform: translateX(0);
+            
             }
             to {
             transform: translateX(-25%);
@@ -185,6 +259,32 @@
             }
             
         }
+
+        @keyframes star_gun_title {
+            0% {
+                filter: brightness(100%);
+                transform: scale(0);
+            }
+            50%{
+                filter: brightness(100%);
+                transform: scale(1);
+            }
+            100%{
+                filter: brightness(50%);
+                transform: scale(1);
+            }
+
+        }
+
+        @keyframes right_buttons {
+            0%{
+                right: -10% ;
+            }
+            100%{
+                right: 1% ;
+            }
+        }
+       
        
         .Rightinfobulle {
             position : absolute;
