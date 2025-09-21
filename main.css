@@ -26,9 +26,9 @@
             z-index: -1; 
             top: -16.3%;
             pointer-events: none; 
-            filter: brightness(50%);
-            animation : star_gun_title linear;
             
+            animation : star_gun_title linear;
+            animation-fill-mode: forwards;
             animation-timeline: scroll();
             animation-range-start: contain 0px;
             animation-range-end: contain 2000px;
@@ -57,8 +57,21 @@
 			background-size: 100% auto;
 			z-index: -1;
 			pointer-events: none; 
+            animation : stars 7s ease-in-out infinite;;
             
+           
 		}
+
+        @keyframes stars {
+            0%{
+                filter:saturate(100%);
+            }50%{
+                filter: saturate(200%);
+            }100%{
+                filter: saturate(100%);
+            }
+            
+        }
         .container {
             display: flex;
             gap: 0px;
@@ -209,11 +222,17 @@
             height: 480px; 
             position: relative;
         }
+        .corridor-container2 {
+            width: 160hv;
+            overflow: hidden;
+            height: 800px; 
+            position: relative;
+        }
 
         .corridor-track {
             display: flex;
             width: max-content;
-            animation: scrollBanner 7s linear infinite;
+            animation: scrollBanner 14s linear infinite;
         }
 
         .corridor-track img {
@@ -223,18 +242,87 @@
         .desurt-track {
             display: flex;
             width: max-content;
-            animation: scrollBanner 1s linear infinite;
+            
+            animation: scrollBanner2 0.5s linear infinite;
+            
         }
+        @keyframes scrollBanner2 {
+            from {
+            transform: translate(0%,75%);
+        
+            }
+            to {
+            transform: translate(-50%,75%);
+           
+            }
+        }
+        
+        
         @keyframes scrollBanner {
             from {
             transform: translateX(0);
             
             }
             to {
-            transform: translateX(-25%);
+            transform: translateX(-50%);
             }
         }
         
+        .mountain{
+            position: absolute;
+            animation: mountain linear;
+            animation-timeline: scroll();
+            
+        }
+
+        
+        @keyframes mountain {
+            from{
+                transform: translatey(0%);
+            }
+            to{
+                transform: translatey(-400%);
+            }
+        }
+        .scrollmountain{
+            animation: mountainscroll 2s linear infinite;
+        }
+         @keyframes mountainscroll {
+            from{
+                transform: translateX(0%);
+            }
+            to{
+                transform: translateX(-50%);
+            }
+        }
+
+         .mountain2{
+            position: absolute;
+            animation: mountain linear;
+            animation-timeline: scroll();
+            
+        }
+
+        
+        @keyframes mountain2 {
+            from{
+                transform: translatey(0%);
+            }
+            to{
+                transform: translatey(-400%);
+            }
+        }
+        .scrollmountain2{
+            animation: mountainscroll2 4s linear infinite;
+        }
+         @keyframes mountainscroll2 {
+            from{
+                transform: translateX(0%);
+            }
+            to{
+                transform: translateX(-50%);
+            }
+        }
 
         .overlay-player {
             position: absolute;
@@ -249,20 +337,20 @@
             position: absolute;
             top: 64px;
             left: 33%;
-            animation: ship-flying 7s linear infinite;
+            animation: ship-flying 7s ease-in-out infinite;
             z-index: 10; 
             pointer-events: none; 
         }
 
          @keyframes ship-flying {
             0% {
-            transform: translateY(-15%);
+            transform: translateY(30%);
             }
             50% {
-            transform: translateY(45%);
+            transform: translateY(90%);
             }
             100% {
-            transform: translateY(-15%);
+            transform: translateY(30%);
             }
             
         }
@@ -277,7 +365,7 @@
                 transform: scale(1);
             }
             100%{
-                filter: brightness(50%);
+                filter: brightness(25%);
                 transform: scale(1);
             }
 
