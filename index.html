@@ -177,15 +177,25 @@
 			</div>
 			<div class="row">
 				
-				<div class="corridor-container">
+				<div class="corridor-container2">
+					<div class="mountain2">
+						<div class="scrollmountain2">
+							<img src="images/mountain2.png" alt="Image locale"  >
+						
+						</div>
+					</div>
+					<div class="mountain">
+						<div class="scrollmountain">
+							<img src="images/mountain.png" alt="Image locale"  >
+						
+						</div>
+					</div>
 					<div class="desurt-track">
-						<img src="images/desurt.png" alt="Image locale">
-						<img src="images/desurt.png" alt="Image locale">
 						<img src="images/desurt.png" alt="Image locale">
 						<img src="images/desurt.png" alt="Image locale">
 						
 					</div>
-					<img src="images/ship.png" alt="Image par-dessus" class="overlay-ship" >
+					<img src="images/ship.png" alt="Image locale" class="overlay-ship" >
 					
 				</div>
 			</div>
@@ -227,7 +237,7 @@
 		});
 	</script>
 	<script>
-		let time = 0;
+		
 
 		function animateBackground() {
 			const scroll = window.scrollY;
@@ -238,11 +248,10 @@
 				bg.style.transform = `translateY(${-scroll * 0.66}px)`;
 
 			
-				const Modulate = 1.5 + 1 * Math.sin(time);
-				bg.style.filter = `saturate(${Modulate*2.0})`;
+				
 			}
 
-			time += 0.025;
+			
 			requestAnimationFrame(animateBackground);
 		}
 
