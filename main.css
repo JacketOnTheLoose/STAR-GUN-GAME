@@ -127,6 +127,24 @@
             background-color: #110A03CC;
             
 		}
+
+        .DDOWN {
+            right : 50%;
+            bottom: 2%;
+            font-size: 64px;
+			position: fixed;
+            display: flex;
+			     
+            margin: 0 auto;
+            text-align: center;
+           
+            animation : DOWN linear;
+            
+            animation-timeline: scroll();
+            animation-range-start: contain 0px;
+            animation-range-end: contain 1000px;
+            animation-fill-mode: forwards;
+		}
 			
 		.lefot {
             flex: 1;
@@ -153,6 +171,17 @@
                 transform: translateX(-50%);
             }
         }
+
+        @keyframes DOWN {
+            0%{
+                opacity: 100%;
+                transform: translateY(00%);
+            }100%{
+                opacity: 0%;
+                transform: translateY(100%);
+            }
+        }
+       
        
         .textre{
             opacity: 1;
