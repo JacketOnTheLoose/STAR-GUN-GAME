@@ -145,6 +145,12 @@
             animation-range-end: contain 1000px;
             animation-fill-mode: forwards;
 		}
+        .DDOWNANIM {
+        
+            animation: DOWNANIM 1s ease-in-out infinite;
+            z-index: 10; 
+            pointer-events: none; 
+		}
 			
 		.lefot {
             flex: 1;
@@ -179,6 +185,21 @@
             }100%{
                 opacity: 0%;
                 transform: translateY(100%);
+            }
+        }
+        @keyframes DOWNANIM {
+            0%{
+                transform: translateY(00%);
+                color: #B52D1B;
+                
+            }50%{
+                transform: translateY(50%);
+                color: #FBC531;
+             
+            }100%{
+                transform: translateY(00%);
+                color: #B52D1B;
+              
             }
         }
        
