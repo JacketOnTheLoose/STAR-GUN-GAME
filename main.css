@@ -5,6 +5,7 @@
         }
        
         body {
+			flex-direction: column;
             font-family: 'Font', sans-serif;
             overflow-x: hidden;
             color: #B52D1B;
@@ -468,3 +469,4 @@
         a:hover > .infobulle {
             transform: scale(1);
         }
+
