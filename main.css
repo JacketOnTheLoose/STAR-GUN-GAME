@@ -21,6 +21,15 @@
         .space{
             height: 100px;
         }
+        .lang{
+            position: fixed;
+            top : -1%;
+            left: 93%;
+            text-align: right;
+            font-size: 48px;
+            
+        }
+
         .star_gun_title {
             position: fixed;
             width: 1540px;
@@ -469,4 +478,3 @@
         a:hover > .infobulle {
             transform: scale(1);
         }
-
